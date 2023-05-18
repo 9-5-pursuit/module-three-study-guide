@@ -32,6 +32,7 @@ export default message;
 ## Importing a Module
 
 - The import name `importedMessage` doesn't match the export name `message` from above. Is that ok?
+- Does this renaming on import change the name of the export?
 
 ```js
 import importedMessage from "./messages.js";
@@ -119,7 +120,9 @@ import donuts from "./donuts.json" assert { type: "json" };
 ```
 
 ## Create a Custom Script in `package.json`
+
 - What benefits can you see from creating your own scripts?
+
 ```json
 // package.json
 {

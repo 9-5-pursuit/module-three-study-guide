@@ -33,14 +33,18 @@
 ---
 
 ## Setting Up a New Create React App Project
+
 - How would you give this a different name, like `the-ultimate-react-portfolio`, instead?
+
 ```bash
 npx create-react-app my-social-media-app
 ```
 
 ## Starting the React App
+
 - What is `cd my-social-media-app` doing?
 - Where would you find the `npm start` script?
+
 ```bash
 cd my-social-media-app
 npm start
@@ -48,10 +52,12 @@ npm start
 
 ## A Simple __App.js__ Structure
 The following code should give you a blank but functional web page.
+
 - What is `import "./App.css";` doing?
 - Why are we using `className` instead of `class` on our `div`?
 - Why is the page blank?
 - What does `export default` do?
+
 ```js
 import "./App.css";
 
@@ -64,10 +70,12 @@ export default App;
 
 ## Using JSX
 This code calls a function, formatName, in the embedded expression. The return value of this function, My Name, is then added to the h1 element after Hello.
+
 - Why does the function use `user.firstName` and `user.lastName` instead of just `firstName` and `lastName`?
 - What's the difference between the `user` in the function `formatName(user)` and the `const user`?
 - What data type is the `user` variable?
 - Why are there brackets around our function call `{formatName(user)}`?
+
 ```js
 function formatName(user) {
   return user.firstName + " " + user.lastName;
@@ -82,6 +90,7 @@ const hello = <h1>Hello, {formatName(user)}!</h1>;
 ```
 
 ## Child Components
+
 - What is the purpose of the empty brackets `<></>`? What are they called?
 - If you removed the parenthesis from `return (...);` would the code still work? Why or why not?
 
@@ -123,6 +132,7 @@ export default App;
 ```
 
 ## Duplicating Components
+
 - What would happen if we replaced all the dynamic data in `Post.js` with static data?
 - What would show on the page if we duplicated the `<ContactList />` component?
 
