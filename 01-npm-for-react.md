@@ -11,8 +11,10 @@
 | __Scripts__ | In the context of package.json, a script is a command or set of commands that can be executed via the command line using npm. Scripts are defined in the "scripts" section of the package.json file and can be used for tasks such as running tests, building the application, or performing other custom operations. |
 
 ## Creating a Node.js project
+
 - What does `mkdir` stand for?
 - What does `cd` stand for?
+
 ```bash
 mkdir my-node-project
 cd my-node-project
@@ -20,17 +22,26 @@ npm init
 ```
 
 ## Exporting a Variable
+
 - What does the `default` keyword do?
+
 ```js
 export default message;
 ```
 
 ## Importing a Module
+
+- The import name `importedMessage` doesn't match the export name `message` from above. Is that ok?
+
 ```js
 import importedMessage from "./messages.js";
 ```
 
 ## Exporting & Importing Multiple Variables
+
+- These import and export names do match, why is that?
+- Could we change them to not match?
+
 ```js
 // messages.js
 export { message, anotherMessage };
@@ -38,12 +49,19 @@ import { message, anotherMessage } from "./messages.js";
 ```
 
 ## Renaming Imported Modules
+
 - What are some benefits of renaming imported variables?
+- What are some good conventions to follow when naming variables?
+
 ```js
 import {message as hello, anotherMessage} from "./messages.js";
 ```
 
 ## Exporting a Function
+
+- What's the purpose of exporting a function?
+- How come we don't include the parameters in our export?
+
 ```js
 const customMessage = (message, name) => {
   return `${message} ${name}`;
@@ -53,6 +71,10 @@ module.exports = { message, anotherMessage, customMessage };
 ```
 
 ## Importing a Function
+
+- How do we know that `customMessage` is a function?
+- Why are we passing "Nice to see you," and "Ava" to the `customMessage` function?
+
 ```js
 import {
   message as hello,
@@ -64,7 +86,9 @@ console.log(customMessage("Nice to see you,", "Ava"));
 ```
 
 ## Exporting JSON
+
 - Why isn't there an export statement anywhere?
+
 ```json
 [
   {
@@ -86,7 +110,10 @@ console.log(customMessage("Nice to see you,", "Ava"));
 ```
 
 ## Importing JSON
+
 - What's different about importing JSON compared to other imports?
+- Do we need to `assert` the data type for JSON in the latest version of React?
+
 ```js
 import donuts from "./donuts.json" assert { type: "json" };
 ```
@@ -107,6 +134,7 @@ import donuts from "./donuts.json" assert { type: "json" };
   "license": "ISC"
 }
 ```
+
 ```bash
 npm run my-script
 ```
