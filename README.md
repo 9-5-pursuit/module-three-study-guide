@@ -11,3 +11,4 @@
 1. [React Lifecycle Methods & Networking](./09-react-lifecycle-methods-and-networking.md)
 1. [Routing in React](./10-routing-in-react.md)
 1. [React CRUD](./11-react-crud.md)
+1. [Merge Conflicts](./12-merge-conflicts.md)
