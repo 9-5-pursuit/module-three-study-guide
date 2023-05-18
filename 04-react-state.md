@@ -38,8 +38,6 @@ button.addEventListener("click", () => {
 ## React event listener and handler without arguments
 
 - How does this differ from the vanilla js process?
-- What is better?
-- What is worse?
 - What is the `changeMode` function called?
 
 ```jsx
