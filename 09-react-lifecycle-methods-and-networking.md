@@ -96,11 +96,10 @@ function MyComponent() {
 
 ## Multiple useEffects
 
-- What would happen if we ran the `bad` example?
+- When will these useEffects run?
 - When is it a good time to use multiple useEffects?
 
 ```js
-// Good
 useEffect(() => {
   getOrderInfo();
 }, [orderInfo]);
@@ -108,11 +107,4 @@ useEffect(() => {
 useEffect(() => {
   getUser();
 }, [user]);
-
-// Bad
-useEffect(() => {
-  getOrderInfo();
-  getUser();
-}, [orderInfo, user]);
-
 ```
