@@ -36,7 +36,7 @@
 - What is the default value of our `state`?
 - What code represents our `event handler`?
 - What `state` is being passed down as `props` and to which components?
-- Of the state being passed down, what do we expected to be `lifted`?
+- How do we expect the state to be `lifted`?
 
 ```jsx
 // src/App.js
