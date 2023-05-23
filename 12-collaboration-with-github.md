@@ -129,7 +129,6 @@ git branch --delete <branch-name>
 
 # Delete Remote Branch
 git push origin --delete <branch-name>
-git push origin :<branch-name>
 ```
 
 ### __CHALLENGE__: Figure out what this code is shorthand for.
