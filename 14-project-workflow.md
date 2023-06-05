@@ -76,21 +76,37 @@ __Knowledge Check__
 
 ## Best Practice Developer Workflow
 
-1. __Pull the latest changes:__ Before starting any work, ensure you have the latest version of the `main` branch by running `git pull origin main`. This ensures you have the most up-to-date codebase to branch off from.
+1. __Pull the latest changes__
 
-1. __Create a feature branch:__ Create a new branch from the `main` branch using a descriptive and meaningful name that reflects the purpose of your feature. It's recommended to follow branch naming conventions like using prefixes such as `feature/` for feature branches, `bug/` for bug fix branches, or `hotfix/` for critical issue fixes. For example: `git checkout -b feature/add-product`.
+    Before starting any work, ensure you have the latest version of the `main` branch by running `git pull origin main`. This ensures you have the most up-to-date codebase to branch off from.
 
-1. __Develop your feature:__ Make changes, add new files, and modify existing code to implement your feature. Use incremental commits (`git commit`) to track your progress as you work.
+1. __Create a feature branch__
 
-1. __Sync with `main` branch:__ Regularly update your feature branch with the latest changes from the `main` branch to avoid conflicts and keep your branch up to date. Switch back to the `main` branch (`git checkout main`) and pull the latest changes (`git pull origin main`). Then switch back to your feature branch (`git checkout feature/add-product`) and merge the `main` branch into your feature branch (`git merge main`). Resolve any merge conflicts that may arise.
+    Create a new branch from the `main` branch using a descriptive and meaningful name that reflects the purpose of your feature. It's recommended to follow branch naming conventions like using prefixes such as `feature/` for feature branches, `bug/` for bug fix branches, or `hotfix/` for critical issue fixes. For example: `git checkout -b feature/add-product`.
 
-1. __Testing and QA:__ Once your feature is complete and functional, thoroughly test it to ensure it meets the requirements and does not introduce any regressions. If possible, automate tests to streamline the QA process. If applicable, deploy your feature to a staging environment for additional testing.
+1. __Develop your feature__
 
-1. __Open a pull request:__ After your feature has passed QA and is ready to be integrated into the main codebase, push your feature branch to the remote repository (`git push origin feature/add-product`). Then, on the GitHub website, open a pull request (PR) to merge your feature branch into the `main` branch. Provide a clear and concise description of the changes and tag relevant team members for review.
+    Make changes, add new files, and modify existing code to implement your feature. Use incremental commits (`git commit`) to track your progress as you work.
 
-1. __Code review and collaboration:__ Share your pull request with other team members for review and feedback. Collaborate on the changes, addressing any comments or suggestions. The PR serves as a collaborative space to discuss the code changes and ensure code quality.
+1. __Sync with `main` branch__
 
-1. __Merge into main:__ Once your pull request has been approved and any necessary changes have been made, merge your feature branch into the `main` branch using the GitHub website. This ensures a controlled and documented integration of your feature into the main codebase.
+    Regularly update your feature branch with the latest changes from the `main` branch to avoid conflicts and keep your branch up to date. Switch back to the `main` branch (`git checkout main`) and pull the latest changes (`git pull origin main`). Then switch back to your feature branch (`git checkout feature/add-product`) and merge the `main` branch into your feature branch (`git merge main`). Resolve any merge conflicts that may arise.
+
+1. __Testing and QA__
+
+    Once your feature is complete and functional, thoroughly test it to ensure it meets the requirements and does not introduce any regressions. If possible, automate tests to streamline the QA process. If applicable, deploy your feature to a staging environment for additional testing.
+
+1. __Open a pull request__
+
+    After your feature has passed QA and is ready to be integrated into the main codebase, push your feature branch to the remote repository (`git push origin feature/add-product`). Then, on the GitHub website, open a pull request (PR) to merge your feature branch into the `main` branch. Provide a clear and concise description of the changes and tag relevant team members for review.
+
+1. __Code review and collaboration__
+
+    Share your pull request with other team members for review and feedback. Collaborate on the changes, addressing any comments or suggestions. The PR serves as a collaborative space to discuss the code changes and ensure code quality.
+
+1. __Merge into main__
+
+    Once your pull request has been approved and any necessary changes have been made, merge your feature branch into the `main` branch using the GitHub website. This ensures a controlled and documented integration of your feature into the main codebase.
 
 __Knowledge Check__
 
